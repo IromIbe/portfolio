@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import { motion } from "framer-motion";
 
 export interface IHeaderProps {}
 
@@ -35,20 +36,28 @@ export function Header(props: IHeaderProps) {
 
   return (
     <div
-      className='sticky drop-shadow-[0.5_35px_35px_ #0e111d)] top-0 nav-bar flex justify-between items-center w-full h-[4.9rem]  lg:px-12 px-8 py-5 border-t-8'
+      className='sticky z-[1000] drop-shadow-[0.5_35px_35px_ #0e111d)] top-0 nav-bar flex justify-between items-center w-full h-[5.2rem]  lg:px-12 px-8 py-5 border-t-8'
       style={{ background: "linear-gradient(200deg, #090c15,  #0e111d)" }}
     >
       <div className='logo'>
-        {/* <Link href="/">
-
-</Link> */}
+        <Link href='/'>
+          <motion.img
+            src='irom.svg'
+            alt=''
+            style={{ width: "140px" }}
+            className='cursor-pointer'
+            initial={{opacity: 0, translateY:-50}}
+                animate={{opacity:1, translateY:0}}
+                transition={{duration:.8, delay:  0.04}}
+          />
+        </Link>
       </div>
       <div
         className={`links flex justify-between items-center lg:flex-[.4]  ${
           isMobile ? "flex-col" : "flex-row"
         }`}
       >
-        <ul
+        <motion.ul
           className={
             isMobile
               ? "nav-links-mobile justify-center items-center leading-10 text-center"
@@ -63,7 +72,11 @@ export function Header(props: IHeaderProps) {
                 className='relative'
                 onClick={() => setActive(link.label)}
               >
-                <li>
+                <motion.li
+                initial={{opacity: 0, translateY:-50}}
+                animate={{opacity:1, translateY:0}}
+                transition={{duration:1.2, delay: index * .1}}
+                >
                   <Link href={link.href}>
                     <span
                       className={`text-[#eaeef2] text-[15px] font-medium cursor-pointer px-4 py-2   hover:text-[#b6e3ff]  ${
@@ -72,18 +85,18 @@ export function Header(props: IHeaderProps) {
                           : ""
                       } ${
                         link.label === "Contact"
-                          ? "text-[#b6e3ff] border-[1px] border-[#b6e3ff] rounded-[4px] transition ease-in-out delay-150 hover:bg-[#b6e3ff20] duration-200"
+                          ? "text-[#b6e3ff] border-[1px] border-[#b6e3ff] rounded-[4px] transition ease-in-out delay-50 hover:bg-[#b6e3ff40] duration-100"
                           : "activeLink"
                       }`}
                     >
                       {link.label}
                     </span>
                   </Link>
-                </li>
+                </motion.li>
               </button>
             </>
           ))}
-        </ul>
+        </motion.ul>
 
         <button
           className='mobile-nav'
