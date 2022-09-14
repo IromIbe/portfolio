@@ -25,7 +25,7 @@ const compName = [
   },
 ];
 
-export function Experience() {
+function Experience() {
   const [company, setCompany] = useState<string>("Nugi");
   const activeComp = compName.find(
     (companyName) => companyName.name === company
@@ -98,3 +98,4 @@ export function Experience() {
     </motion.div>
   );
 }
+export default Experience;

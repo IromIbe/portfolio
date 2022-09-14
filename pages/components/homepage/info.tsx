@@ -2,23 +2,28 @@ import * as React from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 export interface IInfoProps {}
 
-const socials = [{
-  comp: <FaGithub/>,
-  href: "",
-},{
-  comp:<FaLinkedinIn/>,
-  href: "",
-},]
+const socials = [
+  {
+    comp: <FaGithub />,
+    href: "",
+  },
+  {
+    comp: <FaLinkedinIn />,
+    href: "",
+  },
+];
 
-export function Info(props: IInfoProps) {
+function Info(props: IInfoProps) {
   return (
-    <motion.div className='flex justify-center flex-col w-full min-h-[100vh] pt-8'
-     initial={{opacity: 0, translateY:50}}
-    animate={{opacity:1, translateY:0}}
-    transition={{duration:.5, delay:1}}>
+    <motion.div
+      className='flex justify-center flex-col w-full min-h-[100vh] pt-8'
+      initial={{ opacity: 0, translateY: 50 }}
+      animate={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
+    >
       <div className='flex justify-between items-center'>
         <div className=' sm:text-6xl text-5xl font-bold text-[#b6e3ff]'>
           <h1 className='leading-10 sm:mb-3 mb-1'>Hi There! </h1>
@@ -51,3 +56,4 @@ export function Info(props: IInfoProps) {
     </motion.div>
   );
 }
+export default Info;

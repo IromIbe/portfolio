@@ -1,14 +1,15 @@
 import * as React from "react";
-import { Info } from "./info";
-import { AboutMe } from "./about";
-import { Skills } from "./skills";
-import {Experience} from "./experience"
+import Info from "./info";
+import AboutMe from "./about";
+import Skills from "./skills";
+import Experience from "./experience";
+import Project from "./project";
 
 interface Props {}
 
 const social = [];
 
-export function HomePage(props: Props) {
+function HomePage(props: Props) {
   return (
     <div className='w-full min-h-screen sm:px-8 md:px-10 lg:px-14 px-5 bg-[#0e111d]'>
       <div
@@ -33,14 +34,20 @@ export function HomePage(props: Props) {
         <div id='about' className=' w-full text-white'>
           <AboutMe />
         </div>
-        <div id='skills' className=' w-full  text-white'>
+        <div
+          id='skills'
+          className=' w-full flex justify-center items-center text-white'
+        >
           <Skills />
         </div>
-        <div id='experience' className=' w-full sm:pt-20 pt-10 md:pt-24 pb-36 text-white'>
-          <Experience/>
+        <div
+          id='experience'
+          className=' w-full sm:py-10 pt-10 md:py-14  text-white'
+        >
+          <Experience />
         </div>
         <div id='projects' className=' w-full  text-white'>
-          <h1>projects</h1>
+          <Project />
         </div>
         <div id='contact' className=' w-full  text-white'>
           <h1>contact</h1>
@@ -49,3 +56,4 @@ export function HomePage(props: Props) {
     </div>
   );
 }
+export default HomePage;

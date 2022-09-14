@@ -63,9 +63,9 @@ const skills = [
   // },
 ];
 
-export function Skills(props: ISkillsProps) {
+function Skills(props: ISkillsProps) {
   return (
-    <div className='flex flex-col justify-center items-center md:py-10'>
+    <div className='flex flex-col justify-between items-center md:px-20 lg:px-36 md:py-10'>
       <motion.div
         className='flex flex-wrap justify-center items-center'
         initial={{ opacity: 0, translateY: 80 }}
@@ -97,3 +97,4 @@ export function Skills(props: ISkillsProps) {
     </div>
   );
 }
+export default Skills;

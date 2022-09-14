@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export interface IAboutMeProps {}
 
-export function AboutMe(props: IAboutMeProps) {
+function AboutMe(props: IAboutMeProps) {
   return (
     <motion.div
       className=' lg:pt-0 pt-4 md:px-20 lg:px-36'
@@ -46,3 +46,4 @@ export function AboutMe(props: IAboutMeProps) {
     </motion.div>
   );
 }
+export default AboutMe;
