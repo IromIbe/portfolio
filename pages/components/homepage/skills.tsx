@@ -56,11 +56,6 @@ const skills = [
     name: "Javascript",
     imgSrc: "js.svg",
   },
-
-  // {
-  //   name: "Html",
-  //   imgSrc: "html.svg"
-  // },
 ];
 
 function Skills(props: ISkillsProps) {
