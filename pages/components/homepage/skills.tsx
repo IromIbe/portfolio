@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import * as React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -10,51 +11,51 @@ const skills = [
   },
   {
     name: "Html",
-    imgSrc: "html.svg",
+    imgSrc: "/html.svg",
   },
   {
     name: "Css",
-    imgSrc: "css.svg",
+    imgSrc: "/css.svg",
   },
   {
     name: "Redux",
-    imgSrc: "redux.svg",
+    imgSrc: "/redux.svg",
   },
   {
     name: "TypeScript",
-    imgSrc: "typescript.svg",
+    imgSrc: "/typescript.svg",
   },
   {
     name: "Sass",
-    imgSrc: "sass.svg",
+    imgSrc: "/sass.svg",
   },
   {
     name: "Tailwind",
-    imgSrc: "tailwind.svg",
+    imgSrc: "/tailwind.svg",
   },
   {
     name: "Firebase",
-    imgSrc: "firebase.svg",
+    imgSrc: "/firebase.svg",
   },
   {
     name: "Styled Components",
-    imgSrc: "styled.svg",
+    imgSrc: "/styled.svg",
   },
   {
     name: "Bootstrap",
-    imgSrc: "bootstrap.svg",
+    imgSrc: "/bootstrap.svg",
   },
   {
     name: "Next js",
-    imgSrc: "next.svg",
+    imgSrc: "/next.svg",
   },
   {
     name: "Git",
-    imgSrc: "git.svg",
+    imgSrc: "/git.svg",
   },
   {
     name: "Javascript",
-    imgSrc: "js.svg",
+    imgSrc: "/js.svg",
   },
 ];
 
@@ -79,9 +80,9 @@ function Skills(props: ISkillsProps) {
             initial={{ opacity: 0, translateY: -50 }}
             animate={{ opacity: 1, translateY: 0 }}
           >
-            <Image
-              width={100}
-              height={100}
+            <img
+              width='50px'
+              height='50px'
               src={skill.imgSrc}
               alt=''
               title={skill.name}
