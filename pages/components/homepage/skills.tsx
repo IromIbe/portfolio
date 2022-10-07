@@ -80,6 +80,8 @@ function Skills(props: ISkillsProps) {
             animate={{ opacity: 1, translateY: 0 }}
           >
             <Image
+              width={100}
+              height={100}
               src={skill.imgSrc}
               alt=''
               title={skill.name}

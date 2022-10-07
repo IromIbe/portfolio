@@ -96,6 +96,8 @@ function Project({}: Props) {
               >
                 <div className='image'>
                   <Image
+                    width={100}
+                    height={100}
                     src={project.imgSrc}
                     alt=''
                     className='w-full h-full rounded-md'
@@ -146,7 +148,13 @@ function Project({}: Props) {
             <h1 className='hr-lines md:text-[26px] text-[20px] my-2 font-bold capitalize text-[#b6e3ff]'>
               Nugi Report
             </h1>
-            <Image src='/nugi.svg' alt='' className='rounded-md' />
+            <Image
+              src='/nugi.svg'
+              alt=''
+              width={100}
+              height={100}
+              className='rounded-md'
+            />
             <div className='bg-[#111529] rounded-md py-3 px-3'>
               <p className=' leading-8  text-[15px] '>
                 Nugi report is currently a work in progress. Its sole purpose is
