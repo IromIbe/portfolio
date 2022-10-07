@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 export interface ISkillsProps {}
 
 const skills = [
@@ -79,7 +79,7 @@ function Skills(props: ISkillsProps) {
             initial={{ opacity: 0, translateY: -50 }}
             animate={{ opacity: 1, translateY: 0 }}
           >
-            <img
+            <Image
               src={skill.imgSrc}
               alt=''
               title={skill.name}

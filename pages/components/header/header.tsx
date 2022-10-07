@@ -46,9 +46,9 @@ export function Header(props: IHeaderProps) {
             alt=''
             style={{ width: "140px" }}
             className='cursor-pointer'
-            initial={{opacity: 0, translateY:-50}}
-                animate={{opacity:1, translateY:0}}
-                transition={{duration:.8, delay:  0.04}}
+            initial={{ opacity: 0, translateY: -50 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.8, delay: 0.04 }}
           />
         </Link>
       </div>
@@ -73,9 +73,9 @@ export function Header(props: IHeaderProps) {
                 onClick={() => setActive(link.label)}
               >
                 <motion.li
-                initial={{opacity: 0, translateY:-50}}
-                animate={{opacity:1, translateY:0}}
-                transition={{duration:1.2, delay: index * .1}}
+                  initial={{ opacity: 0, translateY: -50 }}
+                  animate={{ opacity: 1, translateY: 0 }}
+                  transition={{ duration: 1.2, delay: index * 0.1 }}
                 >
                   <Link href={link.href}>
                     <span

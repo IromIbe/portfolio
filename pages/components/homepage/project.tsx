@@ -6,6 +6,7 @@ import useCollapse from "react-collapsed";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { BsGithub } from "react-icons/bs";
 import Link from "next/link";
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
 
 type Props = {};
@@ -94,7 +95,7 @@ function Project({}: Props) {
                 }`}
               >
                 <div className='image'>
-                  <img
+                  <Image
                     src={project.imgSrc}
                     alt=''
                     className='w-full h-full rounded-md'
@@ -145,7 +146,7 @@ function Project({}: Props) {
             <h1 className='hr-lines md:text-[26px] text-[20px] my-2 font-bold capitalize text-[#b6e3ff]'>
               Nugi Report
             </h1>
-            <img src='/nugi.svg' alt='' className='rounded-md' />
+            <Image src='/nugi.svg' alt='' className='rounded-md' />
             <div className='bg-[#111529] rounded-md py-3 px-3'>
               <p className=' leading-8  text-[15px] '>
                 Nugi report is currently a work in progress. Its sole purpose is
