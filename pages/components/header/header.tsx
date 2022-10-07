@@ -30,7 +30,7 @@ const navLinks = [
   },
 ];
 
-export function Header(props: IHeaderProps) {
+function Header(props: IHeaderProps) {
   const [active, setActive] = useState<string>("Home");
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
@@ -110,4 +110,4 @@ export function Header(props: IHeaderProps) {
   );
 }
 
-// #b6e3ff
+export default Header;
