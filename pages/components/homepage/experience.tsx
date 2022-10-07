@@ -16,11 +16,12 @@ const compName = [
   },
   {
     name: "Tilte",
-    year: "June - till date",
+    year: "June - September 2022",
     role: "intern",
     duties: [
       "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness",
       "interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Tilte's web applications",
+      "integrated end to end testing with Cypress",
     ],
   },
 ];
@@ -41,7 +42,7 @@ function Experience() {
       viewport={{ once: false, amount: 0.1 }}
     >
       <div>
-        <h1 className='hr-lines text-[#b6e3ff]  lg:text-4xl text-[20px] lg:mb-8 mb-2 tracking-wide font-bold'>
+        <h1 className='hr-lines text-[#b6e3ff]  lg:text-4xl text-[22px] lg:mb-6 mb-2 tracking-wide font-bold'>
           Experience/Internship
         </h1>
         <div className='flex sm:flex-row flex-col justify-between items-start'>

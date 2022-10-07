@@ -4,6 +4,7 @@ import AboutMe from "./about";
 import Skills from "./skills";
 import Experience from "./experience";
 import Project from "./project";
+import Contact from "./contact";
 
 interface Props {}
 
@@ -46,11 +47,17 @@ function HomePage(props: Props) {
         >
           <Experience />
         </div>
-        <div id='projects' className=' w-full  text-white'>
+        <div
+          id='projects'
+          className=' w-full  sm:py-10 pt-10 md:py-14  text-white'
+        >
           <Project />
         </div>
-        <div id='contact' className=' w-full  text-white'>
-          <h1>contact</h1>
+        <div
+          id='contact'
+          className=' w-full  sm:py-10 pt-10 md:py-14  text-white'
+        >
+          <Contact />
         </div>
       </div>
     </div>

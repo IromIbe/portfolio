@@ -13,7 +13,7 @@ function AboutMe(props: IAboutMeProps) {
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.3 }}
     >
-      <h1 className='hr-lines text-[#b6e3ff]  lg:text-4xl text-[20px] lg:mb-6 mb-2 tracking-wide font-bold'>
+      <h1 className='hr-lines text-[#b6e3ff]  lg:text-4xl text-[22px] lg:mb-6 mb-2 tracking-wide font-bold'>
         About Me
       </h1>
       <div className='leading-8'>
@@ -31,10 +31,10 @@ function AboutMe(props: IAboutMeProps) {
           Two years down the line, I wrote my first line of code, which marked
           the beginning of a journey of learning, building and growing. So far,
           I’ve been able to horn my skills from playing around with html, to
-          building web applications with javascript, using javascript frameworks
-          like React and integrating web applications with Redux. Starting out
-          in tech is a milestone for me and a necessary risk I took and I’m
-          super glad and proud of my growth so far.{" "}
+          building interactive web applications with javascript, using
+          javascript frameworks like React and integrating web applications with
+          Redux. Starting out in tech is a milestone for me and a necessary risk
+          I took and I’m super glad and proud of my growth so far.{" "}
         </p>
         <p>
           I recently graduated from a six month intensive bootcamp program. I

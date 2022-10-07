@@ -24,10 +24,10 @@ function Info(props: IInfoProps) {
       animate={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.5, delay: 1 }}
     >
-      <div className='flex justify-between items-center'>
+      <div className='flex flex-col sm:flex-row justify-between items-center'>
         <div className=' sm:text-6xl text-5xl font-bold text-[#b6e3ff]'>
           <h1 className='leading-10 sm:mb-3 mb-1'>Hi There! </h1>
-          <h1 className='sm:mb-10 mb-3'> I’mIbe Irom.</h1>
+          <h1 className='sm:mb-10 mb-3'> I’m Ibe Irom.</h1>
           <h3 className='text-2xl font-medium text-[orange]'>
             Front End Developer.
           </h3>
@@ -44,7 +44,11 @@ function Info(props: IInfoProps) {
           </div>
         </div>
         <div className='image'>
-          <h1></h1>
+          {/* <img
+            src='/pic.svg'
+            alt=''
+            className='w-[500px] h-[500px] rounded-md'
+          /> */}
         </div>
       </div>
     </motion.div>
