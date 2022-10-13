@@ -12,9 +12,9 @@ const social = [];
 
 function HomePage(props: Props) {
   return (
-    <div className='w-full min-h-screen sm:px-8 md:px-10 lg:px-14 px-5 bg-[#0e111d]'>
+    <div className='w-full min-h-screen sm:px-8 md:px-10 lg:px-14  bg-[#0e111d]'>
       <div
-        className='hidden md:flex flex-col  justify-center items-center fixed bottom-0 right-11'
+        className='hidden md:flex flex-col   justify-center items-center fixed bottom-0 right-11'
         style={{ fontFamily: "Fira Code monospace" }}
       >
         <div>
@@ -29,10 +29,10 @@ function HomePage(props: Props) {
         <div className='line'></div>
       </div>
       <div className='md:px-[2.5rem] lg:px-[4rem]'>
-        <div className='info w-full text-white'>
+        <div className='info w-full px-5 text-white'>
           <Info />
         </div>
-        <div id='about' className=' w-full text-white'>
+        <div id='about' className=' w-full px-5 text-white'>
           <AboutMe />
         </div>
         <div
@@ -43,19 +43,19 @@ function HomePage(props: Props) {
         </div>
         <div
           id='experience'
-          className=' w-full sm:py-10 pt-10 md:py-14  text-white'
+          className=' w-full px-5 sm:py-10 pt-10 md:py-14  text-white'
         >
           <Experience />
         </div>
         <div
           id='projects'
-          className=' w-full  sm:py-10 pt-10 md:py-14  text-white'
+          className=' w-full px-5 sm:py-10 pt-10 md:py-14  text-white'
         >
           <Project />
         </div>
         <div
           id='contact'
-          className=' w-full  sm:py-10 pt-10 md:py-14  text-white'
+          className=' w-full px-6 sm:py-10 pt-10 md:py-14  text-white'
         >
           <Contact />
         </div>

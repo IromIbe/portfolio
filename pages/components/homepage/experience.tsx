@@ -75,15 +75,18 @@ function Experience() {
             {activeComp && (
               <div>
                 <div className='mb-4'>
-                  <p className='text-[20px] capitalize'>
+                  <p className='sm:text-[20px] text-[13px] capitalize'>
                     {activeComp.role}{" "}
-                    <span className='text-[orange]'>@ {activeComp.name}</span>
+                    <span className='text-[orange]'>@{activeComp.name}</span>
                   </p>
                   <p className='text-[#b6e3ff90] text-sm'>{activeComp.year}</p>
                 </div>
                 <div className='details'>
                   {activeComp.duties.map((duty, i) => (
-                    <p key={i} className='mb-6 leading-7 flex  items-start'>
+                    <p
+                      key={i}
+                      className='mb-6 sm:text-[15px] text-[14px] leading-7 flex  items-start'
+                    >
                       <span className='py-[14px] mr-6 text-[9px] text-[orange] font-bold'>
                         <FaLocationArrow />
                       </span>

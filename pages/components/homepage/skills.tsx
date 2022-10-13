@@ -73,7 +73,7 @@ function Skills(props: ISkillsProps) {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className='w-[75px] h-[75px] flex justify-center items-center rounded-full  mx-4   py-1 my-5'
+            className='w-[75px] h-[75px] flex justify-center items-center rounded-full  sm:mx-4  mx-1  py-1 my-5'
             whileHover={{
               scale: 1.15,
             }}
@@ -81,12 +81,10 @@ function Skills(props: ISkillsProps) {
             animate={{ opacity: 1, translateY: 0 }}
           >
             <img
-              width='50px'
-              height='50px'
               src={skill.imgSrc}
               alt=''
               title={skill.name}
-              className='w-[50px]'
+              className=' md:w-[35px] w-[30px]'
             />
             {/* <p>{skill.name}</p> */}
           </motion.div>

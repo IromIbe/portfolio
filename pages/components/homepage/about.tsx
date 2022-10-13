@@ -17,7 +17,7 @@ function AboutMe(props: IAboutMeProps) {
         About Me
       </h1>
       <div className='leading-8'>
-        <p className='mb-6'>
+        <p className='mb-6 sm:text-[15px] text-[14px]'>
           I’m a 19 year old front end developer with a knack for creativity,
           building interactive and user friendly web applications with code.
         </p>

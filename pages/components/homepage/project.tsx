@@ -102,11 +102,11 @@ function Project({}: Props) {
                 </div>
                 <div
                   className={`about relative
-                })]  flex flex-col justify-center ${
+                flex flex-col justify-center ${
                   idx % 2 !== 0 ? " items-end left-15" : "right-15 items-end"
                 }`}
                 >
-                  <p className='bg-[#111529] rounded-md leading-[27px] py-3 px-3 text-[15px] '>
+                  <p className='bg-[#111529] rounded-md leading-[27px] py-3 px-3 sm:text-[15px] text-[14px]'>
                     {project.about}
                   </p>
                   <div className='flex my-2'>
@@ -147,14 +147,17 @@ function Project({}: Props) {
             </h1>
             <img src='/nugi.svg' alt='' className='rounded-md' />
             <div className='bg-[#111529] rounded-md py-3 px-3'>
-              <p className=' leading-8  text-[15px] '>
+              <p className=' leading-8  sm:text-[15px] text-[14px]'>
                 Nugi report is currently a work in progress. Its sole purpose is
                 to make the submission of daily accomplishments/reports easier
                 in Nugi innovations (A tech hub designed to help kids, students,
                 and other professionals develop their theoretical and practical
                 skills on major technologies and it's methodologies.).
               </p>
-              <p {...getCollapseProps()} className='leading-8 pt-4'>
+              <p
+                {...getCollapseProps()}
+                className='leading-8 pt-4 sm:text-[15px] text-[14px]'
+              >
                 It is being developed using recent technologies like next js,
                 tailwind and styled components. <br />
                 Though not fully functional and being in the first phase of
